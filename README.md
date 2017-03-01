@@ -20,5 +20,7 @@ All implementations provide a method to verify a key given a specific set of val
 Another problem I found with other libraries is that some failed to provide an `at` method. A method which would accept a specific counter or pass phrase and return the result.
 
 ## Type Consistency
-In RFC 4226 and 6238, the codes are returned as Ints.
-In RFC 2289, the return type is always a string. Whether Six Word or Hex, these are handled internally by python as strings.
+All the codes are turned as strings so that we don't strip leading zeros.
+
+## Provide a drift method
+I only found one implementation with a drift method, even though it's specified in all 3 RFCs that one should exist. You'll find mine conveniently named drift. Mostly for accepting codes, this allows you to easily generate a range of codes so that you can compensate for latency per RFC recommendations.
