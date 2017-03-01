@@ -9,3 +9,6 @@ class TestHotp(unittest.TestCase):
     def test_rfc4226(self):
         for x in range(10):
             self.assertEqual(self.instance.at(x), self.expected[x])
+
+        for x in range(10):
+            self.assertEqual(self.instance.next(), self.expected[x])
