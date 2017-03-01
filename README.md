@@ -10,7 +10,7 @@ In Progress
 Implemented. All tests complete good per the test values in Appendix D of RFC 4426.
 
 ## RFC 6238 - TOTP
-In Progress
+Partially Implemented. Only supports SHA1 at the moment, but all unit tests completed successfully per the test values in the Appendix.
 
 # Guarantees
 ## Provide a verification method
