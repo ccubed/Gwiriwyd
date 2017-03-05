@@ -57,7 +57,7 @@ class hotp:
         self.counter += 1
         return result
 
-    def verify(self, code : int, count : int):
+    def verify(self, code : str, count : int):
         '''
             Given a code and the counter value it should be returned at, verify that the code given does in fact match the HOTP code generated at that counter value given the current secret.
 
