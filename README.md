@@ -1,10 +1,13 @@
 [![Build Status](https://travis-ci.org/ccubed/Gwiriwyd.svg?branch=master)](https://travis-ci.org/ccubed/Gwiriwyd)
-# Gwiriwyd
+# OTPy
 I needed to handle One Time Passwords per RFC 4226, 6238 and 2289, but all the libraries on pypi were not valid and returned invalid values per the tests present in the Appendices. Therefore, I set about making my own.
+
+## Thanks
+Thanks to [Laura](https://github.com/SunDwarf) for the name.
 
 # Current Status
 ## RFC 2289 - OTP
-In Progress
+Implemented. Only supports MD4 and MD5.
 
 ## RFC 4226 - HOTP
 Implemented. All tests complete good per the test values in Appendix D of RFC 4426.

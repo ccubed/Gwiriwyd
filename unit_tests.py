@@ -1,6 +1,6 @@
 import unittest
-from gwiriwyd.hotp import hotp
-from gwiriwyd.totp import totp
+from otpy.hotp import hotp
+from otpy.totp import totp
 
 class TestHotp(unittest.TestCase):
     def setUp(self):
